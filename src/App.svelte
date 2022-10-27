@@ -1,9 +1,16 @@
 <script>
+  import PaymentScript from './lib/payment_script.svelte' 
   let prices = [30, 55, 100];
   let activeIndex = 1;
   const onClick = (index) => {
     activeIndex = index;
   };
+
+ //get all data-cartl-payment-id
+ //forEach => 
+  //add onClick => setShowPopup to true && passing id as parameter 
+  //
+  
 </script>
 
 <!-- <head>
@@ -43,10 +50,12 @@
             </div>
           {/each}
         </div>
+        <div data-cartl-payment-button='asfjdmv19vm'>Test Button</div>
         <button type="button">buy now</button>
       </div>
     </div>
   </div>
+<PaymentScript/>
 </div>
 
 <style>
